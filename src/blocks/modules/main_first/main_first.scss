@@ -1,0 +1,150 @@
+.main_first {
+  padding-top: vw(32);
+  padding-bottom: vw(44);
+  position: relative;
+  @media all and (max-width: 1023px) {
+    padding-bottom: 28px;
+    padding-top: 32px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: vw(13);
+    @media all and (max-width: 1023px) {
+      margin-bottom: 0;
+    }
+    span {
+      font-family: var(--font5);
+      font-weight: 500;
+      font-size: vw(96);
+      line-height: 120%;
+      color: var(--light-gray-2);
+      display: inline-block;
+      margin-right: vw(48);
+      @media all and (max-width: 1023px) {
+        margin-right: 7px;
+        font-size: 28px;
+      }
+    }
+    img {
+      max-width: vw(523);
+      width: 100%;
+      @media all and (max-width: 1023px) {
+        max-width: 178px;
+      }
+    }
+  }
+  &__center {
+    text-align: center;
+    font-family: var(--font5);
+    font-weight: 500;
+    font-size: vw(96);
+    line-height: 120%;
+    color: var(--light-gray-2);
+    @media all and (max-width: 1023px) {
+      font-size: 28px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media all and (max-width: 1023px) {
+      flex-wrap: wrap;
+    }
+    span {
+      font-family: var(--font5);
+      font-weight: 500;
+      font-size: vw(96);
+      line-height: 120%;
+      color: var(--green-2);
+      white-space: nowrap;
+      display: inline-block;
+      padding-right: vw(14);
+      margin-right: vw(14);
+      border-right: 1px solid #fff;
+      @media all and (max-width: 1023px) {
+        font-size: 28px;
+        padding-right: 8px;
+        border-width: 2px;
+      }
+    }
+  }
+  &__btn {
+    position: relative;
+    font-family: var(--font5);
+    font-weight: 700;
+    font-size: vw(16);
+    color: var(--green-2);
+    border: 1px solid var(--green-2);
+    border-radius: vw(60);
+    padding: vw(21) vw(16);
+    max-width: vw(260);
+    background: transparent;
+    width: 100%;
+    white-space: nowrap;
+    padding-left: vw(72);
+    margin-right: vw(30);
+    cursor: pointer;
+    @media all and (max-width: 1023px) {
+      max-width: 360px;
+      padding: 21px 10px;
+      padding-left: 72px;
+      order: 3;
+      border-radius: 60px;
+      font-size: 16px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: vw(40);
+      height: vw(40);
+      background: var(--green-2)
+        url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12H20M20 12L14 6M20 12L14 18' stroke='%23313132' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E")
+        50% no-repeat;
+      border-radius: 50%;
+      background-size: vw(24);
+      top: 50%;
+      left: vw(16);
+      margin-top: vw(-20);
+      @media all and (max-width: 1023px) {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        background-size: 24px;
+        left: 16px;
+      }
+    }
+    &:hover {
+      background: var(--green-2);
+      color: var(--black);
+      &:before {
+        background: var(--black)
+          url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12H20M20 12L14 6M20 12L14 18' stroke='%23cff43f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E")
+          50% no-repeat;
+        transform: rotate(-45deg);
+      }
+    }
+    &:active {
+      background: #a7cc17;
+      color: var(--black);
+      &:before {
+        background: var(--black)
+          url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12H20M20 12L14 6M20 12L14 18' stroke='%23cff43f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E")
+          50% no-repeat;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: vw(16);
+    line-height: 140%;
+    color: var(--light-gray-2);
+    @media all and (max-width: 1023px) {
+      padding-top: 14px;
+      padding-bottom: 32px;
+      font-size: 14px;
+    }
+  }
+}

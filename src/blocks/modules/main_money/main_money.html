@@ -1,0 +1,38 @@
+<section id="main_money" class="main_money">
+    <div class="main_money__in center_block">               
+        <div class="main_money__l-side">
+            <img v-if="sizes.window >= 1023" src="./img/m_block.png" alt="">   
+            <button class="main_money__btn" data-modal-id="3">Получить деньги</button>
+        </div>
+        <div class="main_money__r-side">
+            <img v-if="sizes.window <= 1023" src="./img/m_block2.png" alt=""> 
+            <div class="main_money__block">
+                <div class="main_money__block--l-side">
+                    <img src="./img/m1.svg" alt="">
+                </div>
+                <div class="main_money__block--r-side">
+                    <div class="main_money__block--title">Авторизуйтесь</div>
+                    <div class="main_money__block--text">Выберите сумму займа и срок. Внесите анкетные данные, чтобы мы могли обработать заявку!</div>
+                </div>
+            </div>
+            <div class="main_money__block">
+                <div class="main_money__block--l-side">
+                    <img src="./img/m2.svg" alt="">
+                </div>
+                <div class="main_money__block--r-side">
+                    <div class="main_money__block--title">Дождитесь решения</div>
+                    <div class="main_money__block--text">Оставайтесь с нами, среднее время ожидания 15 минут. Вам придет СМС с ответом!</div>
+                </div>
+            </div>
+            <div class="main_money__block">
+                <div class="main_money__block--l-side">
+                    <img src="./img/m3.svg" alt="">
+                </div>
+                <div class="main_money__block--r-side">
+                    <div class="main_money__block--title">Получите деньги</div>
+                    <div class="main_money__block--text">Подпишите договор и отправьте его. Деньги будут перечислены на счет через 5 минут!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

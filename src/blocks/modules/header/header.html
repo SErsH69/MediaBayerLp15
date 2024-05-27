@@ -1,0 +1,42 @@
+<header class="header">
+    <div class="header__in center_block">
+        <div class="header__logo">
+            <img src="./img/logo.svg" alt="">
+        </div>
+        <div class="header__info" v-if="sizes.window >= 1023">
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#main_form">Калькулятор</a></li>
+                    <li><a href="#main_why">Преимущества</a></li>
+                    <li><a href="#main_reviews">Отзывы</a></li>
+                    <li><a href="#main_money">Как получить</a></li>
+                    <li><a href="#main_questions">Вопросы и ответы</a></li>
+                </ul>
+            </nav>
+            <button class="header__btn" data-modal-id="1"><span>Войти</span></button>
+        </div>
+        <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}" v-if="sizes.window <= 1023">
+            <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
+            <div class="header__burger--body">
+                <div class="header__burger--top">
+                    <a href="/" class="header__burger--logo">
+                        <img src="./img/logo_header.svg" alt="">
+                    </a>
+                    <div class="header__burger--close" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
+                </div>
+                <div class="header__burger--item">
+                    <nav class="header__burger--menu" @click="header.toogleMobileMenu.apply(header)">
+                        <ul>
+                            <li><a href="#main_form">Калькулятор</a></li>
+                            <li><a href="#main_why">Преимущества</a></li>
+                            <li><a href="#main_reviews">Отзывы</a></li>
+                            <li><a href="#main_money">Как получить</a></li>
+                            <li><a href="#main_questions">Вопросы и ответы</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__burger--btn" data-modal-id="1" @click="header.toogleMobileMenu.apply(header)"><span>Войти</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
